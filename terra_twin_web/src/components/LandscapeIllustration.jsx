@@ -1,0 +1,2 @@
+import React from 'react';
+export default function LandscapeIllustration(){return <svg className="landscape" viewBox="0 0 480 160" role="img" aria-label="Flat landscape of an open horizon"><path fill="#f5f5f7" d="M0 0h480v160H0z"/><circle fill="#a1dab4" cx="370" cy="53" r="27"/><path fill="#d2d2d7" d="m0 115 100-56 105 48 99-31 176 45v39H0z"/><path fill="#6e6e73" d="m0 140 135-24 121 22 123-20 101 22v20H0z"/></svg>}

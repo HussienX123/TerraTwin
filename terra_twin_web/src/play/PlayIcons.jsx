@@ -1,0 +1,3 @@
+import React from 'react';
+export function Symbol({type='guide',size=24}){const paths={guide:'M12 19V9m-4 0h8M7 5c3-3 7-3 10 0M4 2c5-4 11-4 16 0M6 19h12v3H6z',star:'m12 2 3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z',check:'m4 12 5 5L20 5',badge:'M12 2 3 6v8l9 8 9-8V6z M8 12l3 3 5-6',arrow:'m12 2 8 9h-5v11H9V11H4z'};return <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d={paths[type]||paths.guide}/></svg>}
+export function Stars({count=0}){return <span className="play-stars"><Symbol type="star"/>{count} / 3 game stars</span>}

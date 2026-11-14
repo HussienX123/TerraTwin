@@ -1,0 +1,3 @@
+export const RAMP=['#ffffcc','#a1dab4','#41b6c4','#2c7fb8','#253494'];
+export function quantileBins(values){const v=values.filter(Number.isFinite).sort((a,b)=>a-b);if(!v.length)return [];const q=p=>{const n=(v.length-1)*p,i=Math.floor(n);return v[i]+(v[Math.min(i+1,v.length-1)]-v[i])*(n-i)};return [0,.2,.4,.6,.8,1].map(q)}
+export function binColor(value,bins){if(value==null||!bins.length)return '#aeaeb2';let i=0;while(i<4&&value>bins[i+1])i++;return RAMP[i]}

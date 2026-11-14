@@ -1,0 +1,2 @@
+import React from 'react';import {fmt} from '../utils/scoring';
+export default function ScoreBar({label,value,percentile}){return <div className="score-bar-row"><div className="score-bar-meta"><span>{label}</span><strong>{value ?? 'n/a'}</strong></div><div className="score-track" aria-hidden="true"><div className="score-fill" style={{width:Math.max(0,Math.min(100,value||0))+'%'}}/></div>{percentile!=null&&<small className="muted">{fmt(percentile)} percentile among land cells</small>}</div>}

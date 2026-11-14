@@ -1,0 +1,4 @@
+import {Line2} from 'three/addons/lines/Line2.js';
+import {LineGeometry} from 'three/addons/lines/LineGeometry.js';
+import {LineMaterial} from 'three/addons/lines/LineMaterial.js';
+export function createSelectionOutline(){const geometry=new LineGeometry().setPositions([0,0,0,0,0,0]);const material=new LineMaterial({color:'#05061A',linewidth:2,depthTest:false});const line=new Line2(geometry,material);const halo=new Line2(geometry,new LineMaterial({color:'#FFFFFF',linewidth:4,depthTest:false}));line.raycast=()=>{};halo.raycast=()=>{};line.renderOrder=1001;halo.renderOrder=1000;line.add(halo);line.update=points=>{line.geometry.dispose();const positions=points.flatMap(p=>[p.x,p.y,p.z]);positions.push(points[0].x,points[0].y,points[0].z);line.geometry=new LineGeometry().setPositions(positions);halo.geometry=line.geometry};line.dispose=()=>{line.geometry.dispose();material.dispose();halo.material.dispose()};return line}

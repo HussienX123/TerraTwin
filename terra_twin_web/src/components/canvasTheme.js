@@ -1,0 +1,1 @@
+export function canvasTheme(){const css=getComputedStyle(document.documentElement),get=name=>css.getPropertyValue(name).trim();return {navy:get('--navy'),raised:get('--navy-raised'),label:get('--on-navy'),secondary:get('--on-navy-secondary'),orange:get('--orange'),gold:get('--gold'),red:get('--red')}}

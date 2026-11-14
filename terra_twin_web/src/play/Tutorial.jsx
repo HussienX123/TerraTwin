@@ -1,0 +1,5 @@
+import React,{useEffect} from 'react';
+import {usePlay} from './PlayState';
+import {tutorial} from '../content/story';
+import {Symbol} from './PlayIcons';
+export default function Tutorial({game,notify}){const play=usePlay(),mode=play.saved.prefs.mode;useEffect(()=>{if(game.stats.stops>0)play.tutorialDone(mode)},[game.stats.stops]);useEffect(()=>{if(play.saved.tutorials?.[mode])return;const key=e=>{if(e.target?.closest?.('button,input,select,textarea'))return;if(game.tutorialStep<2)game.tutorialStep++;else play.tutorialDone(mode);notify()};window.addEventListener('keydown',key);return()=>window.removeEventListener('keydown',key)},[mode,play.saved.tutorials]);if(play.saved.tutorials?.[mode])return null;return <aside className="play-guide" aria-live="polite" onClick={e=>{if(e.target.closest('button'))return;if(game.tutorialStep<2)game.tutorialStep++;else play.tutorialDone(mode);notify()}}><strong><Symbol/> Guide</strong><p>{tutorial[game.tutorialStep]}</p><button onClick={()=>{if(game.tutorialStep<2)game.tutorialStep++;else play.tutorialDone(mode);notify()}}>Got it</button><button onClick={()=>play.tutorialDone(mode)}>Skip tutorial</button></aside>}
