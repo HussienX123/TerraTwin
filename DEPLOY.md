@@ -81,10 +81,10 @@ If you have an existing domain with Let's Encrypt or an SSL certificate, proxy i
 ```nginx
 server {
     listen 443 ssl http2;
-    server_name terratwin.example.org;
+    server_name terratwin.hussienx.com;
 
-    ssl_certificate /etc/letsencrypt/live/terratwin.example.org/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/terratwin.example.org/privkey.pem;
+    ssl_certificate /etc/letsencrypt/live/terratwin.hussienx.com/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/terratwin.hussienx.com/privkey.pem;
 
     location / {
         proxy_pass http://127.0.0.1:80;

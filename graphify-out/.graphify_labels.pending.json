@@ -11,9 +11,9 @@
   "9": "paths",
   "10": "Phase 1 Known Limitations (0.5° POWER, null Mars targets, bathymetry)",
   "11": "createGlobeTerrainWorld",
-  "12": "rover.js",
-  "13": "TerraTwin — Martian Phoenix",
-  "14": "createGlobeXR",
+  "12": "session.js",
+  "13": "TerraTwin Deployment Guide",
+  "14": "terrainData.js",
   "15": "A",
   "16": "water_filter",
   "17": "disagreements",
@@ -25,10 +25,12 @@
   "23": "AGENTS.md",
   "24": "CLAUDE.md",
   "25": "GEMINI.md",
-  "26": "App.jsx",
+  "26": "TerraTwin — Team Martian Phoenix",
   "27": "phase2/run_phase2.py",
   "28": "run1_before_mask/run_phase2.py",
   "29": "pandas",
   "30": "run_phase2c.py",
-  "31": "numpy"
+  "31": "numpy",
+  "32": "TerraTwin Release Hardening & Verification Audit (Phase 9)",
+  "33": "TerraTwin — Space Apps Hackathon Submission Draft"
 }

@@ -1,8 +1,10 @@
 # TerraTwin — Space Apps Hackathon Submission Draft
 
+**Team:** Martian Phoenix
+
 ## 1. Project URL
-- **Public Demo URL:** `[INSERT PRODUCTION VPS OR HOSTING URL HERE]`
-- **Public GitHub Repository:** `[INSERT GITHUB REPOSITORY URL HERE]`
+- **Public Demo URL:** https://terratwin.hussienx.com
+- **Public GitHub Repository:** https://github.com/HussienX123/TerraTwin
 
 ---
 
