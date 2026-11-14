@@ -120,15 +120,15 @@
     "semantic_hash": "52c5e6458311b0c27e633a6595269ac5"
   },
   "terra_twin_web/src/App.jsx": {
-    "mtime": 1794643193.5308282,
-    "seen": 1794645466.7000778,
-    "ast_hash": "dde4bf4ff995b36cc1f1039b1c458cd7",
+    "mtime": 1794646063.8244257,
+    "seen": 1794649568.08403,
+    "ast_hash": "2f16078f8716671bd6c34008bcfb1cc6",
     "semantic_hash": ""
   },
   "terra_twin_web/src/components/CandidatesPage.jsx": {
-    "mtime": 1794610918.0399637,
-    "seen": 1794645466.7000778,
-    "ast_hash": "7af2e01339bccd144822b081ce78f2fd",
+    "mtime": 1794646228.999915,
+    "seen": 1794649568.08403,
+    "ast_hash": "de641faefe6da1dcd0d0276ed3f790d7",
     "semantic_hash": ""
   },
   "terra_twin_web/src/components/CellDetailPanel.jsx": {
@@ -138,9 +138,9 @@
     "semantic_hash": ""
   },
   "terra_twin_web/src/components/DataLimitsPage.jsx": {
-    "mtime": 1794643034.7288277,
-    "seen": 1794645466.7000778,
-    "ast_hash": "64d66843a62a38b8806c4d3fcee45908",
+    "mtime": 1794646207.5409315,
+    "seen": 1794649568.08403,
+    "ast_hash": "81ac87eee3d342ff976c60a5c784ad08",
     "semantic_hash": ""
   },
   "terra_twin_web/src/components/HomeHero.jsx": {
@@ -168,9 +168,9 @@
     "semantic_hash": ""
   },
   "terra_twin_web/src/components/Navbar.jsx": {
-    "mtime": 1794643193.5151632,
-    "seen": 1794645466.7000778,
-    "ast_hash": "222edb13997b2f12bd40a03aa1bd5f8a",
+    "mtime": 1794646421.5229452,
+    "seen": 1794649568.08403,
+    "ast_hash": "c86161bdfb2a812aeef7e00ec1dd7762",
     "semantic_hash": ""
   },
   "terra_twin_web/src/components/StoryOverlay.jsx": {
@@ -216,8 +216,8 @@
     "semantic_hash": "fc8c1becc30ba291aa5d38a6e66d5de0"
   },
   "terra_twin_web/vite.config.js": {
-    "mtime": 1794645445.5585804,
-    "seen": 1794645466.7000778,
+    "mtime": 1794645580.2052653,
+    "seen": 1794649568.08403,
     "ast_hash": "c4ef2c22aa0f71ff82ead6ac9e07d35f",
     "semantic_hash": ""
   },
@@ -258,9 +258,9 @@
     "semantic_hash": ""
   },
   "terra_twin_web/index.html": {
-    "mtime": 1794643193.54374,
-    "seen": 1794645466.7000778,
-    "ast_hash": "26654de628f46aa09971e833d5b97a4a",
+    "mtime": 1794646439.4466705,
+    "seen": 1794649568.08403,
+    "ast_hash": "83ac7803f70ce5dfa5325f05d5c15e86",
     "semantic_hash": ""
   },
   ".claude/settings.json": {
@@ -285,12 +285,6 @@
     "mtime": 1794605115.5152445,
     "seen": 1794645466.7000778,
     "ast_hash": "b0f49174a7c00d2a2fe5b4b35f8f9bec",
-    "semantic_hash": ""
-  },
-  "terra_twin_web/cache/textures/index-before-textures.json": {
-    "mtime": 1794610726.6635334,
-    "seen": 1794645466.7000778,
-    "ast_hash": "f044bd72442f9d969aa821449fa61568",
     "semantic_hash": ""
   },
   "terra_twin_web/public/data/drive_config.json": {
@@ -354,9 +348,9 @@
     "semantic_hash": ""
   },
   "terra_twin_web/src/components/EvidencePage.jsx": {
-    "mtime": 1794642976.2672145,
-    "seen": 1794645466.7000778,
-    "ast_hash": "539ec146e669268c8ed25ab7f1be2a89",
+    "mtime": 1794646583.836669,
+    "seen": 1794649568.08403,
+    "ast_hash": "e95c6c79c028e2d307891bfaf830110b",
     "semantic_hash": ""
   },
   "terra_twin_web/src/components/GlobeCountryGeometry.js": {
@@ -528,9 +522,9 @@
     "semantic_hash": ""
   },
   "terra_twin_web/src/drive/DriveOverlay.jsx": {
-    "mtime": 1794645441.371827,
-    "seen": 1794645466.7000778,
-    "ast_hash": "1cf392761ad4507f7ac0da8f69b5c60a",
+    "mtime": 1794646254.802396,
+    "seen": 1794649568.08403,
+    "ast_hash": "a8c697427911f8e86fed4ce2cb22cf30",
     "semantic_hash": ""
   },
   "terra_twin_web/src/drive/MissionHUD.jsx": {
@@ -600,9 +594,9 @@
     "semantic_hash": ""
   },
   "terra_twin_web/src/navigation.js": {
-    "mtime": 1794643382.8985615,
-    "seen": 1794645466.7000778,
-    "ast_hash": "b3950ab437ba28d65b90c6d04716890d",
+    "mtime": 1794645983.234355,
+    "seen": 1794649568.08403,
+    "ast_hash": "48106addf541eaf5008b8176fb0b8a7f",
     "semantic_hash": ""
   },
   "terra_twin_web/src/play/Journal.jsx": {
@@ -725,42 +719,6 @@
     "ast_hash": "67d88e9d0760c3ba54c75dfd9551c1c5",
     "semantic_hash": ""
   },
-  "terra_twin_web/cache/phase11/App.jsx.txt": {
-    "mtime": 1794642900.602938,
-    "seen": 1794645466.7000778,
-    "ast_hash": "5e1d72330f1a11befe857031bde0a584",
-    "semantic_hash": ""
-  },
-  "terra_twin_web/cache/phase11/DataLimitsPage.jsx.txt": {
-    "mtime": 1794642900.5984244,
-    "seen": 1794645466.7000778,
-    "ast_hash": "2a8647f782a817c4b72f8b31dc0bb5a5",
-    "semantic_hash": ""
-  },
-  "terra_twin_web/cache/phase11/Navbar.jsx.txt": {
-    "mtime": 1794642900.5989294,
-    "seen": 1794645466.7000778,
-    "ast_hash": "97dbcd3b9454cb0a20f5ba1805140cec",
-    "semantic_hash": ""
-  },
-  "terra_twin_web/cache/phase11/ValidationPage.jsx.txt": {
-    "mtime": 1794642900.597339,
-    "seen": 1794645466.7000778,
-    "ast_hash": "896cbf91f9eea2de05e9bbdaa7ad7069",
-    "semantic_hash": ""
-  },
-  "terra_twin_web/cache/phase11/app.css.txt": {
-    "mtime": 1794642900.597339,
-    "seen": 1794645466.7000778,
-    "ast_hash": "1bc9aacea53c2815131dc2e02ba7524e",
-    "semantic_hash": ""
-  },
-  "terra_twin_web/cache/phase11/data-hashes.txt": {
-    "mtime": 1794642900.6627092,
-    "seen": 1794645466.7000778,
-    "ast_hash": "2b85eb09fb9117f7a9f17db7d39d5f3b",
-    "semantic_hash": ""
-  },
   "terra_twin_data/phase2/environment_score.png": {
     "mtime": 1794578468.2762244,
     "seen": 1794645466.7000778,
@@ -813,168 +771,6 @@
     "mtime": 1794581424.094207,
     "seen": 1794645466.7000778,
     "ast_hash": "1286f85388b5f26f5c5223ae0c8d8e40",
-    "semantic_hash": ""
-  },
-  "terra_twin_web/cache/drive-final-1440.png": {
-    "mtime": 1794633726.0971086,
-    "seen": 1794645466.7000778,
-    "ast_hash": "8c460cca277581042b9971c57df5b3b6",
-    "semantic_hash": ""
-  },
-  "terra_twin_web/cache/drive-final-390.png": {
-    "mtime": 1794633725.383069,
-    "seen": 1794645466.7000778,
-    "ast_hash": "20e6e9188e4a5996bdc50f2f26951068",
-    "semantic_hash": ""
-  },
-  "terra_twin_web/cache/drive-m1-desktop.png": {
-    "mtime": 1794633413.6979842,
-    "seen": 1794645466.7000778,
-    "ast_hash": "0dd73619379c9c7ff335273617dfb66c",
-    "semantic_hash": ""
-  },
-  "terra_twin_web/cache/drive-m1-mobile.png": {
-    "mtime": 1794633414.214702,
-    "seen": 1794645466.7000778,
-    "ast_hash": "41533bb240a23e76194af1999f21d489",
-    "semantic_hash": ""
-  },
-  "terra_twin_web/cache/drive-m2-1440.png": {
-    "mtime": 1794633536.8878822,
-    "seen": 1794645466.7000778,
-    "ast_hash": "fa12b734d17d18e030a7aeeb5594a345",
-    "semantic_hash": ""
-  },
-  "terra_twin_web/cache/drive-m2-390.png": {
-    "mtime": 1794633536.183039,
-    "seen": 1794645466.7000778,
-    "ast_hash": "9d4c03f09155a39db674299c81f69138",
-    "semantic_hash": ""
-  },
-  "terra_twin_web/cache/drive-m3-1440.png": {
-    "mtime": 1794633559.3284724,
-    "seen": 1794645466.7000778,
-    "ast_hash": "fdd4a4e7414d0c08904d1ce7cd39490d",
-    "semantic_hash": ""
-  },
-  "terra_twin_web/cache/drive-m3-390.png": {
-    "mtime": 1794633558.6296718,
-    "seen": 1794645466.7000778,
-    "ast_hash": "3bcbe6d1f9e0388dc1db3aa84d7d724d",
-    "semantic_hash": ""
-  },
-  "terra_twin_web/cache/drive-m4-1440.png": {
-    "mtime": 1794633616.1194992,
-    "seen": 1794645466.7000778,
-    "ast_hash": "9a5374ee3fb712c8b975a726b699a6b9",
-    "semantic_hash": ""
-  },
-  "terra_twin_web/cache/drive-m4-390.png": {
-    "mtime": 1794633615.4028184,
-    "seen": 1794645466.7000778,
-    "ast_hash": "20e6e9188e4a5996bdc50f2f26951068",
-    "semantic_hash": ""
-  },
-  "terra_twin_web/cache/focused-terrain.png": {
-    "mtime": 1794639525.6262064,
-    "seen": 1794645466.7000778,
-    "ast_hash": "a7cd97404370cd446e1f3650414e0cd2",
-    "semantic_hash": ""
-  },
-  "terra_twin_web/cache/phase11/drive-final.png": {
-    "mtime": 1794644215.361778,
-    "seen": 1794645466.7000778,
-    "ast_hash": "19de01e305afc75a275079dcc738685c",
-    "semantic_hash": ""
-  },
-  "terra_twin_web/cache/phase11/evidence-1440.png": {
-    "mtime": 1794644146.2556906,
-    "seen": 1794645466.7000778,
-    "ast_hash": "17fdf914d754313fe633ee9ae0271dfa",
-    "semantic_hash": ""
-  },
-  "terra_twin_web/cache/phase11/evidence-390.png": {
-    "mtime": 1794644142.213724,
-    "seen": 1794645466.7000778,
-    "ast_hash": "a05f5f7819378c050c11bcce34408b42",
-    "semantic_hash": ""
-  },
-  "terra_twin_web/cache/phase11/intro-final.png": {
-    "mtime": 1794644351.8992927,
-    "seen": 1794645466.7000778,
-    "ast_hash": "e7af9c3efde1af1847e5918160cdcc59",
-    "semantic_hash": ""
-  },
-  "terra_twin_web/cache/phase11/play-1440.png": {
-    "mtime": 1794644147.2788017,
-    "seen": 1794645466.7000778,
-    "ast_hash": "ece9faef0f73d6c21774fdda964e095c",
-    "semantic_hash": ""
-  },
-  "terra_twin_web/cache/phase11/play-390.png": {
-    "mtime": 1794644143.2160783,
-    "seen": 1794645466.7000778,
-    "ast_hash": "d2d58c7761871fef82bb0ff28d206e57",
-    "semantic_hash": ""
-  },
-  "terra_twin_web/cache/rover-tracks.png": {
-    "mtime": 1794639031.7770002,
-    "seen": 1794645466.7000778,
-    "ast_hash": "8ab4772f4d42bd738da1d4e82a649bfb",
-    "semantic_hash": ""
-  },
-  "terra_twin_web/cache/rover-updated-mobile.png": {
-    "mtime": 1794638722.694816,
-    "seen": 1794645466.7000778,
-    "ast_hash": "83525c397e91bac86264230b535886e1",
-    "semantic_hash": ""
-  },
-  "terra_twin_web/cache/rover-updated.png": {
-    "mtime": 1794638650.0478313,
-    "seen": 1794645466.7000778,
-    "ast_hash": "f8de8fdb9b8a7efe34ab486ae246872e",
-    "semantic_hash": ""
-  },
-  "terra_twin_web/cache/story-journal-390.png": {
-    "mtime": 1794641283.5764027,
-    "seen": 1794645466.7000778,
-    "ast_hash": "1df3bf4722354b5b0d039bf18cd0909c",
-    "semantic_hash": ""
-  },
-  "terra_twin_web/cache/story-predict-1440.png": {
-    "mtime": 1794641346.5475607,
-    "seen": 1794645466.7000778,
-    "ast_hash": "f981e2f20084b5a6806c78cdb7d7c028",
-    "semantic_hash": ""
-  },
-  "terra_twin_web/cache/story-predict-390.png": {
-    "mtime": 1794641346.122906,
-    "seen": 1794645466.7000778,
-    "ast_hash": "4d5d6f480684b5e54a7f8d19a5577fa1",
-    "semantic_hash": ""
-  },
-  "terra_twin_web/cache/terrain-controls-fixed.png": {
-    "mtime": 1794640016.5256984,
-    "seen": 1794645466.7000778,
-    "ast_hash": "e54f3f8f4dd06f5742f236d95b33a3b3",
-    "semantic_hash": ""
-  },
-  "terra_twin_web/cache/terrain-controls-mobile-final.png": {
-    "mtime": 1794640110.031988,
-    "seen": 1794645466.7000778,
-    "ast_hash": "7719ae203b35a205cb4b62057dfd7180",
-    "semantic_hash": ""
-  },
-  "terra_twin_web/cache/terrain-controls-mobile.png": {
-    "mtime": 1794640056.9875324,
-    "seen": 1794645466.7000778,
-    "ast_hash": "5c04714ed40993793b39aee0cf43ae06",
-    "semantic_hash": ""
-  },
-  "terra_twin_web/cache/textures/mars-preview.jpg": {
-    "mtime": 1794613537.529125,
-    "seen": 1794645466.7000778,
-    "ast_hash": "8656ae0694c96def960a7daa667d2018",
     "semantic_hash": ""
   },
   "terra_twin_web/public/data/terrain/_check_earth_+12.50_+30.50.png": {
@@ -1107,6 +903,42 @@
     "mtime": 1794643193.5427105,
     "seen": 1794645466.7000778,
     "ast_hash": "2aeb4ffe3d8e35ec33e43d7fa281ccab",
+    "semantic_hash": ""
+  },
+  "terra_twin_web/src/components/ErrorBoundary.jsx": {
+    "mtime": 1794645961.8276508,
+    "seen": 1794649568.08403,
+    "ast_hash": "03fe974d3d4953498688c00f9130e106",
+    "semantic_hash": ""
+  },
+  "terra_twin_web/src/components/NotFoundPage.jsx": {
+    "mtime": 1794645972.177545,
+    "seen": 1794649568.08403,
+    "ast_hash": "b478aca771edb9c2933f9cebc71a5dc8",
+    "semantic_hash": ""
+  },
+  "DEPLOY.md": {
+    "mtime": 1794645687.828627,
+    "seen": 1794649568.08403,
+    "ast_hash": "9f2014d63513d062cb8e74b51803bbe5",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1794646524.5050106,
+    "seen": 1794649568.08403,
+    "ast_hash": "ebe0ab19e0d9e54200fe9c68d7157886",
+    "semantic_hash": ""
+  },
+  "RELEASE_CHECK.md": {
+    "mtime": 1794646480.9993024,
+    "seen": 1794649568.08403,
+    "ast_hash": "80ae59475901769e14535438cec81e91",
+    "semantic_hash": ""
+  },
+  "SUBMISSION.md": {
+    "mtime": 1794646493.9056642,
+    "seen": 1794649568.08403,
+    "ast_hash": "0363bf1f77d58848034d1a35a7ba3ec2",
     "semantic_hash": ""
   },
   "terra_twin_web/package-lock.json": {

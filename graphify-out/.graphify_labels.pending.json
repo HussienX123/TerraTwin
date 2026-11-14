@@ -1,6 +1,6 @@
 {
   "0": "MapPage.jsx",
-  "1": "numpy",
+  "1": "build_tables.py",
   "2": "run1_before_mask/config.yaml",
   "3": "phase2/config.yaml",
   "4": "react",
@@ -11,8 +11,8 @@
   "9": "paths",
   "10": "Phase 1 Known Limitations (0.5° POWER, null Mars targets, bathymetry)",
   "11": "createGlobeTerrainWorld",
-  "12": "three",
-  "13": "terrainData.js",
+  "12": "rover.js",
+  "13": "TerraTwin — Martian Phoenix",
   "14": "createGlobeXR",
   "15": "A",
   "16": "water_filter",
@@ -24,5 +24,11 @@
   "22": "mobility",
   "23": "AGENTS.md",
   "24": "CLAUDE.md",
-  "25": "GEMINI.md"
+  "25": "GEMINI.md",
+  "26": "App.jsx",
+  "27": "phase2/run_phase2.py",
+  "28": "run1_before_mask/run_phase2.py",
+  "29": "pandas",
+  "30": "run_phase2c.py",
+  "31": "numpy"
 }
