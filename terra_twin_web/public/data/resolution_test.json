@@ -1,0 +1,119 @@
+{
+  "pre_registered_rules": [
+    "Cell size: 0.25\u00b0 over lat 12 to 40, lon -10 to 60 (config variable CELL_DEG_FINE).",
+    "Same slope method as Phase 1 (numpy.gradient on the stitched mosaic, ground size per pixel = 156543.03392 * cos(lat) / 2^8 meters), same aggregation (mean, p90, std of slope; elevation range).",
+    "Jezero target at matching scale: split the cached Jezero MOLA crop into non-overlapping windows whose ground size is about 27.8 km x 27.8 km (about 60 px N-S and 63 px E-W; compute exact pixel counts from the crop's ground size and state them). Compute the four terrain features per window. The target vector is the MEAN of the window vectors. Also report the number of windows. If the crop yields fewer than 4 windows, STOP AND ASK.",
+    "Water filter: apply the existing water_filter thresholds from phase2/config.yaml UNCHANGED. Print the flagged count. If any validation point's cell is flagged, STOP AND ASK.",
+    "Validation points: the same 4 analogs and 2 controls from phase2/known_analogs.json, using the containing cell (floor).",
+    "PRIMARY criterion: the test PASSES if at least 3 of the 4 analogs have a higher terrain percentile than BOTH negative controls. Report PASS or FAIL for this fine grid and for the Run 2 1\u00b0 baseline (read it from phase2/scores.csv), under the same criterion.",
+    "SECONDARY (labeled as secondary, because the analog coordinates are approximate): for each of the 6 points, also report the best terrain percentile within the 3x3 block of fine cells around its containing cell. Apply this identically to analogs and controls."
+  ],
+  "jezero_window_meta": {
+    "crop_px": "154 \u00d7 192 px (463.09 m N\u2013S \u00d7 439.41 m E\u2013W)",
+    "window_px": "60 px N\u2013S \u00d7 63 px E\u2013W (27.79 \u00d7 27.68 km)",
+    "n_windows": 6
+  },
+  "jezero_comparison": [
+    {
+      "feature": "mean_slope_deg",
+      "window_mean": 3.193,
+      "old_box": 3.432
+    },
+    {
+      "feature": "p90_slope_deg",
+      "window_mean": 6.254,
+      "old_box": 8.297
+    },
+    {
+      "feature": "roughness",
+      "window_mean": 2.512,
+      "old_box": 3.467
+    },
+    {
+      "feature": "elev_range_m",
+      "window_mean": 1118.0,
+      "old_box": 2654.0
+    }
+  ],
+  "comparison_table": [
+    {
+      "name": "Dhofar, Oman",
+      "group": "analog",
+      "cell_1": "earth_+17.50_+54.50",
+      "pct_1": 78.4,
+      "cell_025": "earth_+17.12_+54.12",
+      "pct_025": 24.8,
+      "pct_3x3": 94.5
+    },
+    {
+      "name": "Wadi Rum, Jordan",
+      "group": "analog",
+      "cell_1": "earth_+29.50_+35.50",
+      "pct_1": 21.5,
+      "cell_025": "earth_+29.62_+35.38",
+      "pct_025": 3.0,
+      "pct_3x3": 88.0
+    },
+    {
+      "name": "Danakil Depression",
+      "group": "analog",
+      "cell_1": "earth_+14.50_+40.50",
+      "pct_1": 24.4,
+      "cell_025": "earth_+14.12_+40.38",
+      "pct_025": 71.1,
+      "pct_3x3": 93.2
+    },
+    {
+      "name": "Western Desert inverted channels, Egypt",
+      "group": "analog",
+      "cell_1": "earth_+24.50_+27.50",
+      "pct_1": 68.4,
+      "cell_025": "earth_+24.12_+27.12",
+      "pct_025": 79.5,
+      "pct_3x3": 94.5
+    },
+    {
+      "name": "Nile Delta",
+      "group": "negative",
+      "cell_1": "earth_+31.50_+31.50",
+      "pct_1": 77.0,
+      "cell_025": "earth_+31.12_+31.12",
+      "pct_025": 36.9,
+      "pct_3x3": 91.1
+    },
+    {
+      "name": "Mesopotamian floodplain",
+      "group": "negative",
+      "cell_1": "earth_+32.50_+45.50",
+      "pct_1": 80.4,
+      "cell_025": "earth_+32.12_+45.12",
+      "pct_025": 47.3,
+      "pct_3x3": 76.6
+    }
+  ],
+  "primary_results": {
+    "baseline_1deg": {
+      "status": "FAIL",
+      "detail": "0/4 analogs beat max negative control = 80.4"
+    },
+    "fine_025deg": {
+      "status": "FAIL",
+      "detail": "2/4 analogs beat max negative control = 47.3"
+    },
+    "secondary_3x3": {
+      "status": "PASS",
+      "detail": "3/4 analogs beat max negative control = 91.1",
+      "caption": "lenient check; also raises the controls; not evidence of validity"
+    }
+  },
+  "criterion_markdown": "## 4. Primary criterion PASS / FAIL\n\n- Criterion: **PASS** if at least 3 of the 4 analogs exceed BOTH negative controls.\n- **1\u00b0 baseline (Run 2):** **FAIL** (0/4 analogs beat max negative control = 80.4).\n- **0.25\u00b0 fine grid (primary):** **FAIL** (2/4 analogs beat max negative control = 47.3).\n- *(Secondary 3\u00d73 best reference only: PASS, 3/4 analogs beat max negative control = 91.1.)*",
+  "conclusion_text": "The resolution hypothesis was not supported by this test: both the 1\u00b0 baseline (FAIL, 0/4 analogs above both controls) and the 0.25\u00b0 fine grid (FAIL, 2/4 analogs above both controls) failed the pre-registered criterion. Shrinking the cell size and scaling Jezero to 6 matching ~27.8 km windows lowered Jezero's target elevation range from 2654 m to 1118 m, yet the flat Nile Delta and Mesopotamian floodplain controls still scored in the 37th\u201347th percentile range. Under the secondary 3\u00d73-best check, the count was PASS (3/4), pointing to sensitivity to approximate coordinates rather than a primary pass. Terrain similarity on slope summary statistics and elevation range alone does not separate these analogs from flat floodplains at either 1\u00b0 or 0.25\u00b0.",
+  "limitations": [
+    "Sample size is tiny (`n=6`: 4 positives, 2 negative controls).",
+    "Analog and control coordinates in `phase2/known_analogs.json` are approximate and unverified; floor lookup can miss adjacent landforms.",
+    "Earth terrain comes from AWS Terrarium z8 (~470\u2013600 m/px depending on latitude) vs Mars MOLA (463 m/px N\u2013S, 439 m/px E\u2013W).",
+    "Jezero Crater is a single Mars target.",
+    "Environment (climate) was not re-tested because NASA POWER is ~0.5\u00b0 and cannot be meaningfully refined to 0.25\u00b0."
+  ],
+  "report_markdown": "# Phase 2c Resolution Test (0.25\u00b0 vs 1\u00b0)\n\n## 1. Pre-registered rules (written before running; unchanged after results)\n\n- Cell size: 0.25\u00b0 over lat 12 to 40, lon -10 to 60 (config variable CELL_DEG_FINE).\n- Same slope method as Phase 1 (numpy.gradient on the stitched mosaic, ground size per pixel = 156543.03392 * cos(lat) / 2^8 meters), same aggregation (mean, p90, std of slope; elevation range).\n- Jezero target at matching scale: split the cached Jezero MOLA crop into non-overlapping windows whose ground size is about 27.8 km x 27.8 km (about 60 px N-S and 63 px E-W; compute exact pixel counts from the crop's ground size and state them). Compute the four terrain features per window. The target vector is the MEAN of the window vectors. Also report the number of windows. If the crop yields fewer than 4 windows, STOP AND ASK.\n- Water filter: apply the existing water_filter thresholds from phase2/config.yaml UNCHANGED. Print the flagged count. If any validation point's cell is flagged, STOP AND ASK.\n- Validation points: the same 4 analogs and 2 controls from phase2/known_analogs.json, using the containing cell (floor).\n- PRIMARY criterion: the test PASSES if at least 3 of the 4 analogs have a higher terrain percentile than BOTH negative controls. Report PASS or FAIL for this fine grid and for the Run 2 1\u00b0 baseline (read it from phase2/scores.csv), under the same criterion.\n- SECONDARY (labeled as secondary, because the analog coordinates are approximate): for each of the 6 points, also report the best terrain percentile within the 3x3 block of fine cells around its containing cell. Apply this identically to analogs and controls.\n\n## 2. Jezero target (window scale vs old 1\u00b0 box row)\n\n- Cached Jezero crop: **154 \u00d7 192 px** (`463.09` m N\u2013S \u00d7 `439.41` m E\u2013W per px).\n- Matching ~27.8 km window size: **60 px N\u2013S \u00d7 63 px E\u2013W** (`27.79 \u00d7 27.68` km).\n- Non-overlapping windows extracted: **6** (2 \u00d7 3 grid from top-left).\n\n| Feature | Jezero window mean (n=6) | Old Jezero box (154 \u00d7 192 px) |\n|---|---|---|\n| `mean_slope_deg` | 3.193 | 3.432 |\n| `p90_slope_deg` | 6.254 | 8.297 |\n| `roughness` | 2.512 | 3.467 |\n| `elev_range_m` | 1118.000 | 2654.000 |\n\n## 3. Validation comparison: 1\u00b0 (Run 2) vs 0.25\u00b0 (primary) vs 0.25\u00b0 3\u00d73 best (secondary)\n\n- Grid: 31,360 total cells; water filter flagged **4,575** cells (rule A only = 108, rule B only = 4467, both = 0); **26,785** land cells scored.\n- No validation point fell in a flagged water cell.\n\n| Point | Group | 1\u00b0 cell (Run 2) | 1\u00b0 terrain pct | 0.25\u00b0 cell | 0.25\u00b0 terrain pct (primary) | 0.25\u00b0 3\u00d73 best pct (secondary) |\n|---|---|---|---|---|---|---|\n| Dhofar, Oman | analog | `earth_+17.50_+54.50` | 78.4 | `earth_+17.12_+54.12` | 24.8 | 94.5 |\n| Wadi Rum, Jordan | analog | `earth_+29.50_+35.50` | 21.5 | `earth_+29.62_+35.38` | 3.0 | 88.0 |\n| Danakil Depression | analog | `earth_+14.50_+40.50` | 24.4 | `earth_+14.12_+40.38` | 71.1 | 93.2 |\n| Western Desert inverted channels, Egypt | analog | `earth_+24.50_+27.50` | 68.4 | `earth_+24.12_+27.12` | 79.5 | 94.5 |\n| Nile Delta | negative | `earth_+31.50_+31.50` | 77.0 | `earth_+31.12_+31.12` | 36.9 | 91.1 |\n| Mesopotamian floodplain | negative | `earth_+32.50_+45.50` | 80.4 | `earth_+32.12_+45.12` | 47.3 | 76.6 |\n\n## 4. Primary criterion PASS / FAIL\n\n- Criterion: **PASS** if at least 3 of the 4 analogs exceed BOTH negative controls.\n- **1\u00b0 baseline (Run 2):** **FAIL** (0/4 analogs beat max negative control = 80.4).\n- **0.25\u00b0 fine grid (primary):** **FAIL** (2/4 analogs beat max negative control = 47.3).\n- *(Secondary 3\u00d73 best reference only: PASS, 3/4 analogs beat max negative control = 91.1.)*\n\n## 5. Conclusion\n\nThe resolution hypothesis was not supported by this test: both the 1\u00b0 baseline (FAIL, 0/4 analogs above both controls) and the 0.25\u00b0 fine grid (FAIL, 2/4 analogs above both controls) failed the pre-registered criterion. Shrinking the cell size and scaling Jezero to 6 matching ~27.8 km windows lowered Jezero's target elevation range from 2654 m to 1118 m, yet the flat Nile Delta and Mesopotamian floodplain controls still scored in the 37th\u201347th percentile range. Under the secondary 3\u00d73-best check, the count was PASS (3/4), pointing to sensitivity to approximate coordinates rather than a primary pass. Terrain similarity on slope summary statistics and elevation range alone does not separate these analogs from flat floodplains at either 1\u00b0 or 0.25\u00b0.\n\n## 6. Limitations\n\n- Sample size is tiny (`n=6`: 4 positives, 2 negative controls).\n- Analog and control coordinates in `phase2/known_analogs.json` are approximate and unverified; floor lookup can miss adjacent landforms.\n- Earth terrain comes from AWS Terrarium z8 (~470\u2013600 m/px depending on latitude) vs Mars MOLA (463 m/px N\u2013S, 439 m/px E\u2013W).\n- Jezero Crater is a single Mars target.\n- Environment (climate) was not re-tested because NASA POWER is ~0.5\u00b0 and cannot be meaningfully refined to 0.25\u00b0.\n"
+}

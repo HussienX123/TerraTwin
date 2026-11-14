@@ -1,0 +1,50 @@
+{
+  "data_sources": [
+    {
+      "Data": "Earth elevation",
+      "Source": "AWS Terrain Tiles, Terrarium PNG, zoom 8: `https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png` (1,224 tiles). Height = R\u00b7256 + G + B/256 \u2212 32768.",
+      "Resolution used": "Ground size/pixel = 156543.03392\u00b7cos(lat)/2^8 \u2248 470 m (40\u00b0N) to 598 m (12\u00b0N)"
+    },
+    {
+      "Data": "Earth climate",
+      "Source": "NASA POWER Climatology API v2.10.1, `https://power.larc.nasa.gov/api/temporal/climatology/point`, community AG, parameters `T2M`, `T2M_MAX`, `T2M_MIN`, `PRECTOTCORR`, one call per cell center",
+      "Resolution used": "Native \u2248 0.5\u00b0 (MERRA-2 / 0.5\u00b0 grid), queried at 1\u00b0 cell centers"
+    },
+    {
+      "Data": "Mars elevation",
+      "Source": "MOLA MEGDR global DEM mosaic, 463 m, USGS Astrogeology: `https://planetarymaps.usgs.gov/mosaic/Mars_MGS_MOLA_DEM_mosaic_global_463m.tif` (redirects to `https://asc-pds-services.s3.us-west-2.amazonaws.com/mosaic/Mars_MGS_MOLA_DEM_mosaic_global_463m.tif`). File is 2.1 GB, so only the Jezero window was read via HTTP range requests (no full download).",
+      "Resolution used": "463.09 m/px N\u2013S, 439.4 m/px E\u2013W (true ground, equirectangular scaled by cos 18.4\u00b0); crop 154\u00d7192 px"
+    }
+  ],
+  "citations": [
+    "Terrain tiles: \"Terrain Tiles (Terrarium), Mapzen / Amazon Web Services Open Data Registry, `https://registry.opendata.aws/terrain-tiles/`. Includes data from SRTM, ASTER GDEM, GMTED2010, and others; see `https://github.com/tilezen/joerd/blob/master/docs/attribution.md`.\"",
+    "Climate: \"NASA Prediction Of Worldwide Energy Resources (POWER) Project, NASA Langley Research Center, `https://power.larc.nasa.gov/`, accessed November 2026 (Climatology API v2.10.1; MERRA-2 and CERES/GEOS-derived meteorology).\"",
+    "Mars: \"Smith, D. E., et al. (2001), Mars Orbiter Laser Altimeter: Experiment summary after the first year of global mapping of Mars, J. Geophys. Res., 106(E10), 23689\u201323722. Mars MGS MOLA DEM 463 m/pix mosaic, USGS Astrogeology Science Center, `https://astrogeology.usgs.gov/search/map/mars_mgs_mola_dem_463m`.\""
+  ],
+  "targets_status": {
+    "t_mean_c": null,
+    "t_max_c": null,
+    "t_min_c": null,
+    "t_range_c": null,
+    "precip_mm_yr": null
+  },
+  "mars_climate_missing": true,
+  "slope_limit_display": "15\u00b0, needs a cited source",
+  "water_filter": {
+    "enabled": true,
+    "water_max_elev_m": 0,
+    "water_max_range_m": 5,
+    "water_max_p90_slope_deg": 0.05,
+    "water_deep_elev_m": -200
+  },
+  "water_cells_flagged": 310,
+  "unflagged_below_sea_level_cells": 69,
+  "min_completeness": 0.6,
+  "changelog": [
+    "We now flag likely water cells (flat sea or lake surface, or deep sea floor) from elevation and slope, and leave them unscored.",
+    "310 of 1,960 cells were flagged as water; percentiles, candidates and disagreements now use land cells only.",
+    "Before the fix, the three \"disagreement\" cells were Caspian Sea water; the Run 1 outputs are archived for comparison.",
+    "The environment score is still aridity-only until Mars climate values are entered, and temperature range means hottest-month max minus coldest-month min.",
+    "Coastal cells that mix land and water may not be flagged, and the validation (6 points) is exploratory, not statistical proof."
+  ]
+}

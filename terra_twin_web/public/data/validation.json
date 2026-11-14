@@ -1,0 +1,180 @@
+{
+  "negative_result_statement": "Terrain similarity did not separate known analogs from negative controls (exploratory, n=6).",
+  "rank_table": [
+    {
+      "name": "Dhofar, Oman",
+      "group": "analog",
+      "cell": "earth_+17.50_+54.50",
+      "terrain_score": 78.4,
+      "terrain_pct": 78.4,
+      "environment_score": 35.4,
+      "environment_pct": 35.4,
+      "mobility_score": 60.9,
+      "mobility_pct": 21.5,
+      "overall_score": 60.2,
+      "overall_pct": 48.6
+    },
+    {
+      "name": "Wadi Rum, Jordan",
+      "group": "analog",
+      "cell": "earth_+29.50_+35.50",
+      "terrain_score": 21.5,
+      "terrain_pct": 21.5,
+      "environment_score": 62.8,
+      "environment_pct": 62.8,
+      "mobility_score": 26.7,
+      "mobility_pct": 11.0,
+      "overall_score": 35.4,
+      "overall_pct": 12.8
+    },
+    {
+      "name": "Danakil Depression",
+      "group": "analog",
+      "cell": "earth_+14.50_+40.50",
+      "terrain_score": 24.4,
+      "terrain_pct": 24.4,
+      "environment_score": 25.2,
+      "environment_pct": 25.3,
+      "mobility_score": 58.4,
+      "mobility_pct": 20.5,
+      "overall_score": 34.8,
+      "overall_pct": 12.4
+    },
+    {
+      "name": "Western Desert inverted channels, Egypt",
+      "group": "analog",
+      "cell": "earth_+24.50_+27.50",
+      "terrain_score": 68.3,
+      "terrain_pct": 68.4,
+      "environment_score": 96.8,
+      "environment_pct": 96.8,
+      "mobility_score": 92.0,
+      "mobility_pct": 57.6,
+      "overall_score": 84.0,
+      "overall_pct": 95.0
+    },
+    {
+      "name": "Nile Delta",
+      "group": "negative",
+      "cell": "earth_+31.50_+31.50",
+      "terrain_score": 77.0,
+      "terrain_pct": 77.0,
+      "environment_score": 39.7,
+      "environment_pct": 39.7,
+      "mobility_score": 98.1,
+      "mobility_pct": 96.2,
+      "overall_score": 72.1,
+      "overall_pct": 75.2
+    },
+    {
+      "name": "Mesopotamian floodplain",
+      "group": "negative",
+      "cell": "earth_+32.50_+45.50",
+      "terrain_score": 80.4,
+      "terrain_pct": 80.4,
+      "environment_score": 25.9,
+      "environment_pct": 25.9,
+      "mobility_score": 98.9,
+      "mobility_pct": 99.3,
+      "overall_score": 69.6,
+      "overall_pct": 70.4
+    }
+  ],
+  "run1_vs_run2_ranks": [
+    {
+      "name": "Dhofar, Oman",
+      "group": "analog",
+      "terrain_r1": 25.5,
+      "terrain_r2": 78.4,
+      "environment_r1": 43.1,
+      "environment_r2": 35.4,
+      "mobility_r1": 23.5,
+      "mobility_r2": 21.5,
+      "overall_r1": 18.4,
+      "overall_r2": 48.6
+    },
+    {
+      "name": "Wadi Rum, Jordan",
+      "group": "analog",
+      "terrain_r1": 65.5,
+      "terrain_r2": 21.5,
+      "environment_r1": 67.9,
+      "environment_r2": 62.8,
+      "mobility_r1": 10.4,
+      "mobility_r2": 11.0,
+      "overall_r1": 36.3,
+      "overall_r2": 12.8
+    },
+    {
+      "name": "Danakil Depression",
+      "group": "analog",
+      "terrain_r1": 25.3,
+      "terrain_r2": 24.4,
+      "environment_r1": 31.7,
+      "environment_r2": 25.3,
+      "mobility_r1": 22.1,
+      "mobility_r2": 20.5,
+      "overall_r1": 14.4,
+      "overall_r2": 12.4
+    },
+    {
+      "name": "Western Desert inverted channels, Egypt",
+      "group": "analog",
+      "terrain_r1": 64.5,
+      "terrain_r2": 68.4,
+      "environment_r1": 97.3,
+      "environment_r2": 96.8,
+      "mobility_r1": 63.3,
+      "mobility_r2": 57.6,
+      "overall_r1": 96.2,
+      "overall_r2": 95.0
+    },
+    {
+      "name": "Nile Delta",
+      "group": "negative",
+      "terrain_r1": 50.8,
+      "terrain_r2": 77.0,
+      "environment_r1": 47.2,
+      "environment_r2": 39.7,
+      "mobility_r1": 96.5,
+      "mobility_r2": 96.2,
+      "overall_r1": 56.0,
+      "overall_r2": 75.2
+    },
+    {
+      "name": "Mesopotamian floodplain",
+      "group": "negative",
+      "terrain_r1": 50.7,
+      "terrain_r2": 80.4,
+      "environment_r1": 32.6,
+      "environment_r2": 25.9,
+      "mobility_r1": 99.1,
+      "mobility_r2": 99.3,
+      "overall_r1": 46.7,
+      "overall_r2": 70.4
+    }
+  ],
+  "auc_table": [
+    {
+      "score": "terrain_score",
+      "auc_run1": "0.50 (exploratory, n=6)",
+      "auc_run2": "0.12 (exploratory, n=6)"
+    },
+    {
+      "score": "environment_score",
+      "auc_run1": "0.62 (exploratory, n=6)",
+      "auc_run2": "0.62 (exploratory, n=6)"
+    },
+    {
+      "score": "mobility_score",
+      "auc_run1": "0.00 (exploratory, n=6)",
+      "auc_run2": "0.00 (exploratory, n=6)"
+    },
+    {
+      "score": "overall_score",
+      "auc_run1": "0.25 (exploratory, n=6)",
+      "auc_run2": "0.25 (exploratory, n=6)"
+    }
+  ],
+  "report_markdown": "# Phase 2 validation report\n\n- Earth cells scored: 1960; environment mode: **partial** (Mars precip / t_range are null in targets.json, so the environment score is aridity-only: lower precip = higher score)\n- Mobility slope limit: 15 deg (**needs a cited source**).\n- Weights (terrain/environment/mobility): 0.4/0.3/0.3. Not tuned.\n- All known-analog and control coordinates are **approximate, verify**; each point is mapped to its containing 1-degree cell (floor of lat/lon), so points lying on a cell corner are sensitive to that choice.\n- Terrain score is *terrain similarity*, not geology. Cells flagged `is_water` (see config water_filter) are excluded from standardization, percentiles, candidates and disagreements.\n\n## Rank table (percentile rank among land cells, 100 = best)\n\n| Point | Group | Cell | terrain | terrain pct | environment | environment pct | mobility | mobility pct | overall | overall pct |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Dhofar, Oman | analog | earth_+17.50_+54.50 | 78.4 | 78.4 | 35.4 | 35.4 | 60.9 | 21.5 | 60.2 | 48.6 |\n| Wadi Rum, Jordan | analog | earth_+29.50_+35.50 | 21.5 | 21.5 | 62.8 | 62.8 | 26.7 | 11.0 | 35.4 | 12.8 |\n| Danakil Depression | analog | earth_+14.50_+40.50 | 24.4 | 24.4 | 25.2 | 25.3 | 58.4 | 20.5 | 34.8 | 12.4 |\n| Western Desert inverted channels, Egypt | analog | earth_+24.50_+27.50 | 68.3 | 68.4 | 96.8 | 96.8 | 92.0 | 57.6 | 84.0 | 95.0 |\n| Nile Delta | negative | earth_+31.50_+31.50 | 77.0 | 77.0 | 39.7 | 39.7 | 98.1 | 96.2 | 72.1 | 75.2 |\n| Mesopotamian floodplain | negative | earth_+32.50_+45.50 | 80.4 | 80.4 | 25.9 | 25.9 | 98.9 | 99.3 | 69.6 | 70.4 |\n\n## ROC-AUC (4 analogs vs 2 negative controls; exploratory, n=6)\n\n| Score | AUC |\n|---|---|\n| terrain_score | 0.12 (exploratory, n=6) |\n| environment_score | 0.62 (exploratory, n=6) |\n| mobility_score | 0.00 (exploratory, n=6) |\n| overall_score | 0.25 (exploratory, n=6) |\n\n> **n is tiny (4 positives, 2 negatives = 8 pairs).** AUC moves in steps of 0.125 and is not statistically meaningful; treat as a sanity check only.\n\n## Honest reading\n\n- terrain_score: mean analog percentile 48.2, AUC 0.12 (exploratory, n=6) -> analogs rank near the median.\n- environment_score: mean analog percentile 55.1, AUC 0.62 (exploratory, n=6) -> analogs rank near the median.\n- mobility_score: mean analog percentile 27.6, AUC 0.00 (exploratory, n=6) -> analogs rank poorly (below median).\n- overall_score: mean analog percentile 42.2, AUC 0.25 (exploratory, n=6) -> analogs rank near the median.\n\nNo weights or features were adjusted after seeing these results.\n## Run 1 vs Run 2\n\n**Water filter (Run 2 only).** Cells flagged `likely water`: **310** of 1960.\n\n- Rule A (flat water): elev_mean_m <= 0 AND elev_range_m <= 5 AND p90_slope_deg <= 0.05\n- Rule B (deep water): elev_mean_m <= -200\n- Cells flagged: rule A only = 6, rule B only = 304, both = 0 (A total = 6, B total = 304).\n- No known analog or negative-control cell was flagged. Thresholds were not adjusted.\n\n### Percentile ranks and AUC, before vs after (100 = best)\n\n| Point | Group | Terrain R1 | R2 | Env R1 | R2 | Mobility R1 | R2 | Overall R1 | R2 |\n|---|---|---|---|---|---|---|---|---|---|\n| Dhofar, Oman | analog | 25.5 | 78.4 | 43.1 | 35.4 | 23.5 | 21.5 | 18.4 | 48.6 |\n| Wadi Rum, Jordan | analog | 65.5 | 21.5 | 67.9 | 62.8 | 10.4 | 11.0 | 36.3 | 12.8 |\n| Danakil Depression | analog | 25.3 | 24.4 | 31.7 | 25.3 | 22.1 | 20.5 | 14.4 | 12.4 |\n| Western Desert inverted channels, Egypt | analog | 64.5 | 68.4 | 97.3 | 96.8 | 63.3 | 57.6 | 96.2 | 95.0 |\n| Nile Delta | negative | 50.8 | 77.0 | 47.2 | 39.7 | 96.5 | 96.2 | 56.0 | 75.2 |\n| Mesopotamian floodplain | negative | 50.7 | 80.4 | 32.6 | 25.9 | 99.1 | 99.3 | 46.7 | 70.4 |\n\n| Score | AUC Run 1 | AUC Run 2 |\n|---|---|---|\n| terrain_score | 0.50 (exploratory, n=6) | 0.12 (exploratory, n=6) |\n| environment_score | 0.62 (exploratory, n=6) | 0.62 (exploratory, n=6) |\n| mobility_score | 0.00 (exploratory, n=6) | 0.00 (exploratory, n=6) |\n| overall_score | 0.25 (exploratory, n=6) | 0.25 (exploratory, n=6) |\n\n### Candidates\n\nRun 2 top 3 clusters (center lat, lon; cells; mean overall):\n\n1. (23.667, 33.0), 6 cells, overall 90.196\n2. (20.0, 10.0), 2 cells, overall 88.354\n3. (17.5, 50.0), 2 cells, overall 88.014\n\nRun 1 top 3 for reference:\n\n1. (24.875, 34.625), 16 cells, overall 86.377\n2. (22.773, 21.136), 22 cells, overall 84.651\n3. (17.5, 50.25), 4 cells, overall 84.392\n\n### Disagreement cells\n\nRun 2: earth_+29.50_+57.50 (terrain_high_mobility_low, terrain 98.908, mobility 2.194), earth_+28.50_+34.50 (terrain_high_mobility_low, terrain 95.088, mobility 0.0), earth_+12.50_+30.50 (mobility_high_terrain_low, terrain 1.88, mobility 96.154)\nRun 1 (all Caspian Sea water cells): earth_+38.50_+50.50, earth_+37.50_+51.50, earth_+37.50_+52.50\n\n### Summary\n\n- Did any result change because of the water filter? **Yes (see tables above)** (Run 1 disagreements were all water cells, so they necessarily differ).\n- Did anything else change? **No** (targets.json still null, slope limit still 15 - needs a cited source, analog/control coordinates unchanged, still approximate, verify).\n\n### Notes and limitations\n\n- Environment score mode: **partial** (Mars targets are null, so aridity-only).\n- `t_range_c` is an extreme-to-extreme range (hottest-month max minus coldest-month min from NASA POWER), **not a diurnal range**. The Jezero value in targets.json uses the same definition (currently null).\n- Coastal cells that mix land and water may not be flagged as water and can still carry sea-surface or bathymetry values.\n- Known gap: 69 unflagged cells still have elev_mean_m < 0 (real depressions such as Danakil, Qattara and the Nile Delta, but also shallow Persian Gulf / southern Caspian cells whose Terrarium range exceeds the Rule A limit). Thresholds were deliberately not loosened; none of these cells appear in the candidates or disagreements (all have elev_mean_m > 100 m).\n- Validation is exploratory with n=6 (4 positives, 2 negatives); weights, features and thresholds were not tuned to any rank.\n"
+}

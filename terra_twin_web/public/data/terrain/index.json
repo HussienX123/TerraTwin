@@ -1,0 +1,492 @@
+{
+  "sites": [
+    {
+      "id": "mars_jezero",
+      "type": "mars",
+      "name": "Jezero",
+      "lat": 18.4,
+      "lon": 77.75,
+      "cellId": "mars_jezero",
+      "values": {
+        "id": "mars_jezero",
+        "body": "mars",
+        "lat": 18.4,
+        "lon": 77.75,
+        "mean_slope_deg": 3.432192690879347,
+        "p90_slope_deg": 8.297324034895592,
+        "roughness": 3.4672542967339086,
+        "elev_mean_m": -2260.2578463203463,
+        "elev_range_m": 2654.0,
+        "data_completeness": 0.5
+      },
+      "file": "mars_jezero.bin",
+      "width": 129,
+      "height": 129,
+      "spacing_m": 468.75,
+      "min_m": -2863.5111433346337,
+      "max_m": -551.6761609987075,
+      "source": "MOLA cached Jezero crop",
+      "resolution_note": "About 0.5 km; local slopes are understated.",
+      "status": "available",
+      "texture_status": "available",
+      "texture_source": "Mars_MGS_MOLA_ClrShade_merge_global_463m",
+      "texture_layer": "Mars_MGS_MOLA_ClrShade_merge_global_463m",
+      "texture_date": "Undated composite",
+      "texture_resolution_m": 463,
+      "projection_note": "Resampled to the Phase 6 local metric grid, north up; identical geographic corners.",
+      "texture_sampling_m": 308.351,
+      "texture_file": "mars_jezero/tex_2048.jpg",
+      "texture_file_xr": "mars_jezero/tex_1024.jpg",
+      "texture_corners": [
+        [
+          18.907117092607308,
+          77.21556021399633
+        ],
+        [
+          18.907117092607308,
+          78.28443978600367
+        ],
+        [
+          17.89288290739269,
+          78.28443978600367
+        ],
+        [
+          17.89288290739269,
+          77.21556021399633
+        ]
+      ]
+    },
+    {
+      "id": "earth_+23.50_+32.50",
+      "type": "earth",
+      "name": "Cluster 1",
+      "lat": 23.5,
+      "lon": 32.5,
+      "cellId": "earth_+23.50_+32.50",
+      "values": {
+        "body": "earth",
+        "lat": 23.5,
+        "lon": 32.5,
+        "mean_slope_deg": 0.5550122261047363,
+        "p90_slope_deg": 1.1829575300216675,
+        "roughness": 0.9277403950691223,
+        "elev_mean_m": 254.4236602783203,
+        "elev_range_m": 1254.0,
+        "t_mean_c": 25.98,
+        "t_max_c": 46.39,
+        "t_min_c": 1.69,
+        "t_range_c": 44.7,
+        "precip_mm_yr": 1.23,
+        "data_completeness": 1.0,
+        "id": "earth_+23.50_+32.50",
+        "is_water": false,
+        "low_completeness_flag": false,
+        "terrain_score": 95.816,
+        "environment_score": 98.393,
+        "mobility_score": 92.114,
+        "overall_score": 95.478,
+        "terrain_pct": 95.8,
+        "environment_pct": 98.4,
+        "mobility_pct": 58.1,
+        "overall_pct": 100.0,
+        "environment_mode": "partial"
+      },
+      "file": "earth_+23.50_+32.50.bin",
+      "width": 129,
+      "height": 129,
+      "spacing_m": 468.75,
+      "min_m": 172.02354827940144,
+      "max_m": 485.0785385802802,
+      "source": "Cached Terrarium z8",
+      "resolution_note": "About 0.5 km; local slopes are understated.",
+      "status": "available",
+      "texture_layer": "Landsat_WELD_CorrectedReflectance_TrueColor_Global_Annual",
+      "texture_source": "Surface Reflectance (NBAR, True Color, Global, Annual, v3.1, Landsat / WELD)",
+      "texture_date": "2000-12-01",
+      "texture_resolution_m": 35.049,
+      "texture_status": "available",
+      "texture_file": "earth_+23.50_+32.50/tex_2048.jpg",
+      "texture_file_xr": "earth_+23.50_+32.50/tex_1024.jpg",
+      "projection_note": "Resampled to the Phase 6 local metric grid, north up; identical geographic corners.",
+      "texture_corners": [
+        [
+          23.769218200816717,
+          32.20613202692266
+        ],
+        [
+          23.769218200816717,
+          32.79386797307734
+        ],
+        [
+          23.23023064196608,
+          32.79386797307734
+        ],
+        [
+          23.23023064196608,
+          32.20613202692266
+        ]
+      ],
+      "texture_sampling_m": 35.049
+    },
+    {
+      "id": "earth_+19.50_+10.50",
+      "type": "earth",
+      "name": "Cluster 2",
+      "lat": 19.5,
+      "lon": 10.5,
+      "cellId": "earth_+19.50_+10.50",
+      "values": {
+        "body": "earth",
+        "lat": 19.5,
+        "lon": 10.5,
+        "mean_slope_deg": 0.22021523118019104,
+        "p90_slope_deg": 0.3580872118473053,
+        "roughness": 0.3096289038658142,
+        "elev_mean_m": 464.10589599609375,
+        "elev_range_m": 311.0,
+        "t_mean_c": 26.49,
+        "t_max_c": 46.08,
+        "t_min_c": 1.11,
+        "t_range_c": 44.97,
+        "precip_mm_yr": 8.6,
+        "data_completeness": 1.0,
+        "id": "earth_+19.50_+10.50",
+        "is_water": false,
+        "low_completeness_flag": false,
+        "terrain_score": 77.016,
+        "environment_score": 90.782,
+        "mobility_score": 97.613,
+        "overall_score": 87.325,
+        "terrain_pct": 77.0,
+        "environment_pct": 90.8,
+        "mobility_pct": 93.7,
+        "overall_pct": 97.9,
+        "environment_mode": "partial"
+      },
+      "file": "earth_+19.50_+10.50.bin",
+      "width": 129,
+      "height": 129,
+      "spacing_m": 468.75,
+      "min_m": 400.8392945645999,
+      "max_m": 563.0288416428234,
+      "source": "Cached Terrarium z8",
+      "resolution_note": "About 0.5 km; local slopes are understated.",
+      "status": "available",
+      "texture_layer": "Landsat_WELD_CorrectedReflectance_TrueColor_Global_Annual",
+      "texture_source": "Surface Reflectance (NBAR, True Color, Global, Annual, v3.1, Landsat / WELD)",
+      "texture_date": "2000-12-01",
+      "texture_resolution_m": 36.026,
+      "texture_status": "available",
+      "texture_file": "earth_+19.50_+10.50/tex_2048.jpg",
+      "texture_file_xr": "earth_+19.50_+10.50/tex_1024.jpg",
+      "projection_note": "Resampled to the Phase 6 local metric grid, north up; identical geographic corners.",
+      "texture_corners": [
+        [
+          19.76926928029975,
+          10.214107019692676
+        ],
+        [
+          19.76926928029975,
+          10.785892980307324
+        ],
+        [
+          19.230281847967685,
+          10.785892980307324
+        ],
+        [
+          19.230281847967685,
+          10.214107019692676
+        ]
+      ],
+      "texture_sampling_m": 36.026
+    },
+    {
+      "id": "earth_+17.50_+49.50",
+      "type": "earth",
+      "name": "Cluster 3",
+      "lat": 17.5,
+      "lon": 49.5,
+      "cellId": "earth_+17.50_+49.50",
+      "values": {
+        "body": "earth",
+        "lat": 17.5,
+        "lon": 49.5,
+        "mean_slope_deg": 0.689619243144989,
+        "p90_slope_deg": 1.4779974222183228,
+        "roughness": 0.6069657802581787,
+        "elev_mean_m": 618.4779052734375,
+        "elev_range_m": 503.0,
+        "t_mean_c": 27.93,
+        "t_max_c": 45.99,
+        "t_min_c": 2.78,
+        "t_range_c": 43.21,
+        "precip_mm_yr": 13.7325,
+        "data_completeness": 1.0,
+        "id": "earth_+17.50_+49.50",
+        "is_water": false,
+        "low_completeness_flag": false,
+        "terrain_score": 89.509,
+        "environment_score": 86.598,
+        "mobility_score": 90.147,
+        "overall_score": 88.827,
+        "terrain_pct": 89.5,
+        "environment_pct": 86.6,
+        "mobility_pct": 50.3,
+        "overall_pct": 98.8,
+        "environment_mode": "partial"
+      },
+      "file": "earth_+17.50_+49.50.bin",
+      "width": 129,
+      "height": 129,
+      "spacing_m": 468.75,
+      "min_m": 478.44869175827495,
+      "max_m": 789.8508912801836,
+      "source": "Cached Terrarium z8",
+      "resolution_note": "About 0.5 km; local slopes are understated.",
+      "status": "available",
+      "texture_layer": "Landsat_WELD_CorrectedReflectance_TrueColor_Global_Annual",
+      "texture_source": "Surface Reflectance (NBAR, True Color, Global, Annual, v3.1, Landsat / WELD)",
+      "texture_date": "2000-12-01",
+      "texture_resolution_m": 36.45,
+      "texture_status": "available",
+      "texture_file": "earth_+17.50_+49.50/tex_2048.jpg",
+      "texture_file_xr": "earth_+17.50_+49.50/tex_1024.jpg",
+      "projection_note": "Resampled to the Phase 6 local metric grid, north up; identical geographic corners.",
+      "texture_corners": [
+        [
+          17.769293857974205,
+          49.21742707829793
+        ],
+        [
+          17.769293857974205,
+          49.78257292170204
+        ],
+        [
+          17.230306477286792,
+          49.78257292170204
+        ],
+        [
+          17.230306477286792,
+          49.21742707829793
+        ]
+      ],
+      "texture_sampling_m": 36.45
+    },
+    {
+      "id": "earth_+29.50_+57.50",
+      "type": "earth",
+      "name": "Disagreement earth_+29.50_+57.50",
+      "lat": 29.5,
+      "lon": 57.5,
+      "cellId": "earth_+29.50_+57.50",
+      "values": {
+        "body": "earth",
+        "lat": 29.5,
+        "lon": 57.5,
+        "mean_slope_deg": 6.253852367401123,
+        "p90_slope_deg": 14.670955657958984,
+        "roughness": 5.834178447723389,
+        "elev_mean_m": 2357.427490234375,
+        "elev_range_m": 3750.0,
+        "t_mean_c": 13.97,
+        "t_max_c": 36.66,
+        "t_min_c": -13.13,
+        "t_range_c": 49.79,
+        "precip_mm_yr": 97.8875,
+        "data_completeness": 1.0,
+        "id": "earth_+29.50_+57.50",
+        "is_water": false,
+        "low_completeness_flag": false,
+        "terrain_score": 98.908,
+        "environment_score": 41.601,
+        "mobility_score": 2.194,
+        "overall_score": 52.702,
+        "terrain_pct": 98.9,
+        "environment_pct": 41.6,
+        "mobility_pct": 5.3,
+        "overall_pct": 32.4,
+        "environment_mode": "partial"
+      },
+      "file": "earth_+29.50_+57.50.bin",
+      "width": 129,
+      "height": 129,
+      "spacing_m": 468.75,
+      "min_m": 1725.7016934981964,
+      "max_m": 4315.218653655138,
+      "source": "Cached Terrarium z8",
+      "resolution_note": "About 0.5 km; local slopes are understated.",
+      "status": "available",
+      "texture_layer": "Landsat_WELD_CorrectedReflectance_TrueColor_Global_Annual",
+      "texture_source": "Surface Reflectance (NBAR, True Color, Global, Annual, v3.1, Landsat / WELD)",
+      "texture_date": "2000-12-01",
+      "texture_resolution_m": 33.264,
+      "texture_status": "available",
+      "texture_file": "earth_+29.50_+57.50/tex_2048.jpg",
+      "texture_file_xr": "earth_+29.50_+57.50/tex_1024.jpg",
+      "projection_note": "Resampled to the Phase 6 local metric grid, north up; identical geographic corners.",
+      "texture_corners": [
+        [
+          29.769135329883895,
+          57.19036270285028
+        ],
+        [
+          29.769135329883895,
+          57.80963729714972
+        ],
+        [
+          29.230147510616323,
+          57.80963729714972
+        ],
+        [
+          29.230147510616323,
+          57.19036270285028
+        ]
+      ],
+      "texture_sampling_m": 33.264
+    },
+    {
+      "id": "earth_+28.50_+34.50",
+      "type": "earth",
+      "name": "Disagreement earth_+28.50_+34.50",
+      "lat": 28.5,
+      "lon": 34.5,
+      "cellId": "earth_+28.50_+34.50",
+      "values": {
+        "body": "earth",
+        "lat": 28.5,
+        "lon": 34.5,
+        "mean_slope_deg": 6.761847496032715,
+        "p90_slope_deg": 15.058076858520508,
+        "roughness": 5.847896099090576,
+        "elev_mean_m": 400.9013977050781,
+        "elev_range_m": 3999.81640625,
+        "t_mean_c": 23.13,
+        "t_max_c": 44.69,
+        "t_min_c": 1.98,
+        "t_range_c": 42.71,
+        "precip_mm_yr": 19.625,
+        "data_completeness": 1.0,
+        "id": "earth_+28.50_+34.50",
+        "is_water": false,
+        "low_completeness_flag": false,
+        "terrain_score": 95.088,
+        "environment_score": 81.868,
+        "mobility_score": 0.0,
+        "overall_score": 62.596,
+        "terrain_pct": 95.1,
+        "environment_pct": 81.9,
+        "mobility_pct": 5.0,
+        "overall_pct": 54.7,
+        "environment_mode": "partial"
+      },
+      "file": "earth_+28.50_+34.50.bin",
+      "width": 129,
+      "height": 129,
+      "spacing_m": 468.75,
+      "min_m": -1578.038787604117,
+      "max_m": 1595.5297266101554,
+      "source": "Cached Terrarium z8",
+      "resolution_note": "About 0.5 km; local slopes are understated.",
+      "status": "available",
+      "texture_layer": "Landsat_WELD_CorrectedReflectance_TrueColor_Global_Annual",
+      "texture_source": "Surface Reflectance (NBAR, True Color, Global, Annual, v3.1, Landsat / WELD)",
+      "texture_date": "2000-12-01",
+      "texture_resolution_m": 33.587,
+      "texture_status": "available",
+      "texture_file": "earth_+28.50_+34.50/tex_2048.jpg",
+      "texture_file_xr": "earth_+28.50_+34.50/tex_1024.jpg",
+      "projection_note": "Resampled to the Phase 6 local metric grid, north up; identical geographic corners.",
+      "texture_corners": [
+        [
+          28.769149765942544,
+          34.19334394908017
+        ],
+        [
+          28.769149765942544,
+          34.80665605091983
+        ],
+        [
+          28.230161996950947,
+          34.80665605091983
+        ],
+        [
+          28.230161996950947,
+          34.19334394908017
+        ]
+      ],
+      "texture_sampling_m": 33.587
+    },
+    {
+      "id": "earth_+12.50_+30.50",
+      "type": "earth",
+      "name": "Disagreement earth_+12.50_+30.50",
+      "lat": 12.5,
+      "lon": 30.5,
+      "cellId": "earth_+12.50_+30.50",
+      "values": {
+        "body": "earth",
+        "lat": 12.5,
+        "lon": 30.5,
+        "mean_slope_deg": 0.5774534344673157,
+        "p90_slope_deg": 0.5769356489181519,
+        "roughness": 1.775879144668579,
+        "elev_mean_m": 556.5043334960938,
+        "elev_range_m": 903.0,
+        "t_mean_c": 27.38,
+        "t_max_c": 44.79,
+        "t_min_c": 6.6,
+        "t_range_c": 38.19,
+        "precip_mm_yr": 456.44,
+        "data_completeness": 1.0,
+        "id": "earth_+12.50_+30.50",
+        "is_water": false,
+        "low_completeness_flag": false,
+        "terrain_score": 1.88,
+        "environment_score": 11.583,
+        "mobility_score": 96.154,
+        "overall_score": 33.073,
+        "terrain_pct": 1.9,
+        "environment_pct": 11.6,
+        "mobility_pct": 83.6,
+        "overall_pct": 11.4,
+        "environment_mode": "partial"
+      },
+      "file": "earth_+12.50_+30.50.bin",
+      "width": 129,
+      "height": 129,
+      "spacing_m": 468.75,
+      "min_m": 479.2064575518572,
+      "max_m": 1330.7159812848981,
+      "source": "Cached Terrarium z8",
+      "resolution_note": "About 0.5 km; local slopes are understated.",
+      "status": "available",
+      "texture_layer": "Landsat_WELD_CorrectedReflectance_TrueColor_Global_Annual",
+      "texture_source": "Surface Reflectance (NBAR, True Color, Global, Annual, v3.1, Landsat / WELD)",
+      "texture_date": "2000-12-01",
+      "texture_resolution_m": 37.313,
+      "texture_status": "available",
+      "texture_file": "earth_+12.50_+30.50/tex_2048.jpg",
+      "texture_file_xr": "earth_+12.50_+30.50/tex_1024.jpg",
+      "projection_note": "Resampled to the Phase 6 local metric grid, north up; identical geographic corners.",
+      "texture_corners": [
+        [
+          12.76935313314712,
+          30.223962217110056
+        ],
+        [
+          12.76935313314712,
+          30.776037782889944
+        ],
+        [
+          12.230365852353621,
+          30.776037782889944
+        ],
+        [
+          12.230365852353621,
+          30.223962217110056
+        ]
+      ],
+      "texture_sampling_m": 37.313
+    }
+  ]
+}
