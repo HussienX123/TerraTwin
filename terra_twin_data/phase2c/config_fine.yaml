@@ -1,0 +1,13 @@
+# Phase 2c config: 0.25-degree resolution test (terrain similarity only).
+# Water filter thresholds and terrain features are read directly from ../phase2/config.yaml unchanged.
+CELL_DEG_FINE: 0.25
+TARGET_WINDOW_KM: 27.8
+MIN_JEZERO_WINDOWS: 4
+PHASE2_CONFIG: ../phase2/config.yaml
+PHASE2_SCORES: ../phase2/scores.csv
+KNOWN_ANALOGS: ../phase2/known_analogs.json
+MARS_TARGETS_CSV: ../mars_targets.csv
+OUT_SCORES: scores_025.csv
+OUT_REPORT: resolution_test.md
+OUT_HEATMAP: terrain_score_025.png
+HEATMAP_DPI: 110

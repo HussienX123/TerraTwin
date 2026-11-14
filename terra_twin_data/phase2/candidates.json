@@ -1,0 +1,186 @@
+{
+  "note": "features compared: ['mean_slope_deg', 'p90_slope_deg', 'roughness', 'elev_range_m']; Jezero climate features with null Mars values are skipped",
+  "top_threshold_overall": 84.0,
+  "n_top_cells": 83,
+  "n_top_after_analog_exclusion": 72,
+  "n_clusters_found": 16,
+  "clusters": [
+    {
+      "rank": 1,
+      "center": {
+        "lat": 23.667,
+        "lon": 33.0
+      },
+      "n_cells": 6,
+      "cell_ids": [
+        "earth_+22.50_+31.50",
+        "earth_+22.50_+32.50",
+        "earth_+23.50_+32.50",
+        "earth_+23.50_+33.50",
+        "earth_+24.50_+33.50",
+        "earth_+25.50_+34.50"
+      ],
+      "mean_scores": {
+        "terrain_score": 91.197,
+        "environment_score": 96.74,
+        "mobility_score": 82.318,
+        "overall_score": 90.196
+      },
+      "closest_to_jezero": [
+        {
+          "feature": "mean_slope_deg",
+          "cluster_mean": 1.224,
+          "jezero": 3.432,
+          "abs_diff_in_earth_sd": 1.073
+        },
+        {
+          "feature": "roughness",
+          "cluster_mean": 1.292,
+          "jezero": 3.467,
+          "abs_diff_in_earth_sd": 1.151
+        }
+      ],
+      "most_different": [
+        {
+          "feature": "elev_range_m",
+          "cluster_mean": 1031.921,
+          "jezero": 2654.0,
+          "abs_diff_in_earth_sd": 1.628
+        },
+        {
+          "feature": "p90_slope_deg",
+          "cluster_mean": 2.652,
+          "jezero": 8.297,
+          "abs_diff_in_earth_sd": 1.183
+        }
+      ],
+      "environment_mode": "partial"
+    },
+    {
+      "rank": 2,
+      "center": {
+        "lat": 20.0,
+        "lon": 10.0
+      },
+      "n_cells": 2,
+      "cell_ids": [
+        "earth_+19.50_+10.50",
+        "earth_+20.50_+9.50"
+      ],
+      "mean_scores": {
+        "terrain_score": 82.868,
+        "environment_score": 86.992,
+        "mobility_score": 97.029,
+        "overall_score": 88.354
+      },
+      "closest_to_jezero": [
+        {
+          "feature": "mean_slope_deg",
+          "cluster_mean": 0.257,
+          "jezero": 3.432,
+          "abs_diff_in_earth_sd": 1.543
+        },
+        {
+          "feature": "roughness",
+          "cluster_mean": 0.383,
+          "jezero": 3.467,
+          "abs_diff_in_earth_sd": 1.633
+        }
+      ],
+      "most_different": [
+        {
+          "feature": "elev_range_m",
+          "cluster_mean": 425.5,
+          "jezero": 2654.0,
+          "abs_diff_in_earth_sd": 2.236
+        },
+        {
+          "feature": "p90_slope_deg",
+          "cluster_mean": 0.446,
+          "jezero": 8.297,
+          "abs_diff_in_earth_sd": 1.646
+        }
+      ],
+      "environment_mode": "partial"
+    },
+    {
+      "rank": 3,
+      "center": {
+        "lat": 17.5,
+        "lon": 50.0
+      },
+      "n_cells": 2,
+      "cell_ids": [
+        "earth_+17.50_+49.50",
+        "earth_+17.50_+50.50"
+      ],
+      "mean_scores": {
+        "terrain_score": 90.661,
+        "environment_score": 83.854,
+        "mobility_score": 88.646,
+        "overall_score": 88.014
+      },
+      "closest_to_jezero": [
+        {
+          "feature": "mean_slope_deg",
+          "cluster_mean": 0.834,
+          "jezero": 3.432,
+          "abs_diff_in_earth_sd": 1.263
+        },
+        {
+          "feature": "p90_slope_deg",
+          "cluster_mean": 1.703,
+          "jezero": 8.297,
+          "abs_diff_in_earth_sd": 1.382
+        }
+      ],
+      "most_different": [
+        {
+          "feature": "elev_range_m",
+          "cluster_mean": 562.0,
+          "jezero": 2654.0,
+          "abs_diff_in_earth_sd": 2.099
+        },
+        {
+          "feature": "roughness",
+          "cluster_mean": 0.661,
+          "jezero": 3.467,
+          "abs_diff_in_earth_sd": 1.485
+        }
+      ],
+      "environment_mode": "partial"
+    }
+  ],
+  "disagreements": [
+    {
+      "id": "earth_+29.50_+57.50",
+      "lat": 29.5,
+      "lon": 57.5,
+      "type": "terrain_high_mobility_low",
+      "terrain_score": 98.908,
+      "mobility_score": 2.194,
+      "overall_score": 52.702,
+      "p90_slope_deg": 14.671
+    },
+    {
+      "id": "earth_+28.50_+34.50",
+      "lat": 28.5,
+      "lon": 34.5,
+      "type": "terrain_high_mobility_low",
+      "terrain_score": 95.088,
+      "mobility_score": 0.0,
+      "overall_score": 62.596,
+      "p90_slope_deg": 15.058
+    },
+    {
+      "id": "earth_+12.50_+30.50",
+      "lat": 12.5,
+      "lon": 30.5,
+      "type": "mobility_high_terrain_low",
+      "terrain_score": 1.88,
+      "mobility_score": 96.154,
+      "overall_score": 33.073,
+      "p90_slope_deg": 0.577
+    }
+  ]
+}

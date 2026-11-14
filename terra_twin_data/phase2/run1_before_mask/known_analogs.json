@@ -1,0 +1,13 @@
+{
+  "_note": "ALL coordinates are approximate, verify before use in the submission.",
+  "analogs": [
+    {"name": "Dhofar, Oman", "lat": 17.0, "lon": 54.0, "status": "approximate, verify"},
+    {"name": "Wadi Rum, Jordan", "lat": 29.6, "lon": 35.4, "status": "approximate, verify"},
+    {"name": "Danakil Depression", "lat": 14.2, "lon": 40.3, "status": "approximate, verify"},
+    {"name": "Western Desert inverted channels, Egypt", "lat": 24.0, "lon": 27.0, "status": "approximate, verify"}
+  ],
+  "negative_controls": [
+    {"name": "Nile Delta", "lat": 31.0, "lon": 31.0, "status": "approximate, verify"},
+    {"name": "Mesopotamian floodplain", "lat": 32.0, "lon": 45.0, "status": "approximate, verify"}
+  ]
+}

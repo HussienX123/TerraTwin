@@ -1,0 +1,2 @@
+id,body,lat,lon,mean_slope_deg,p90_slope_deg,roughness,elev_mean_m,elev_range_m,t_mean_c,t_max_c,t_min_c,t_range_c,precip_mm_yr,data_completeness
+mars_jezero,mars,18.4,77.75,3.432192690879347,8.297324034895592,3.4672542967339086,-2260.2578463203463,2654.0,,,,,,0.5

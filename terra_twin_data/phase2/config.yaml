@@ -1,0 +1,64 @@
+# Phase 2 config. All weights, thresholds and feature lists live here.
+paths:                       # relative to this file's folder
+  earth_csv: ../mena_grid.csv
+  mars_csv: ../mars_targets.csv
+  targets_json: ../targets.json
+  known_analogs: known_analogs.json
+  scores_csv: scores.csv
+  candidates_json: candidates.json
+  report_md: validation_report.md
+  run1_dir: run1_before_mask       # archived Run 1 outputs (read-only)
+  changes_md: changes.md
+
+terrain:
+  features: [mean_slope_deg, p90_slope_deg, roughness, elev_range_m]   # NO absolute elevation
+
+environment:
+  features: [t_range_c, precip_mm_yr]                                  # NO mean temperature
+  # targets are read from targets.json; if either is null -> aridity-only, flagged "partial"
+
+mobility:
+  slope_feature: p90_slope_deg
+  slope_limit_deg: 15        # needs a cited source
+
+weights:                     # overall = weighted average; must sum to 1
+  terrain: 0.4
+  environment: 0.3
+  mobility: 0.3
+
+water_filter:               # uses Phase 1 columns only; a cell is "likely water" if rule A OR rule B holds
+  enabled: true
+  # Rule A (flat water): ALL three must hold
+  water_max_elev_m: 0
+  water_max_range_m: 5
+  water_max_p90_slope_deg: 0.05
+  # Rule B (deep water): elev_mean_m <= this
+  water_deep_elev_m: -200
+  # Limitation: coastal cells mixing land and water may not be flagged.
+
+quality:
+  min_completeness: 0.6      # below this: flagged, excluded from candidates
+
+validation:
+  grid_lookup: floor         # point -> containing 1-degree cell (floor of lat/lon)
+
+candidates:
+  top_fraction: 0.05         # top 5% overall
+  exclusion_radius_km: 300   # from any known analog
+  dbscan:
+    eps_deg: 1.5             # lat/lon degrees (1.5 links 8-neighbour 1-degree cells)
+    min_samples: 2
+  n_clusters: 3
+  # comparison features for "closest / most different" vs Jezero (only those with a non-null Jezero value are used)
+  comparison_features: [mean_slope_deg, p90_slope_deg, roughness, elev_range_m, t_range_c, precip_mm_yr]
+  n_closest: 2
+  n_different: 2
+
+disagreements:
+  max_cells: 3
+  high_pct: 80               # "high" = above this percentile of the score
+  low_pct: 40                # "low" = below this percentile of the score
+
+heatmaps:
+  scores: [terrain_score, environment_score, mobility_score, overall_score]
+  dpi: 110

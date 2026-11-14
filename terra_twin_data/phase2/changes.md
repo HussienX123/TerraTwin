@@ -1,0 +1,5 @@
+- We now flag likely water cells (flat sea or lake surface, or deep sea floor) from elevation and slope, and leave them unscored.
+- 310 of 1,960 cells were flagged as water; percentiles, candidates and disagreements now use land cells only.
+- Before the fix, the three "disagreement" cells were Caspian Sea water; the Run 1 outputs are archived for comparison.
+- The environment score is still aridity-only until Mars climate values are entered, and temperature range means hottest-month max minus coldest-month min.
+- Coastal cells that mix land and water may not be flagged, and the validation (6 points) is exploratory, not statistical proof.
