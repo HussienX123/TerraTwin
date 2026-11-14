@@ -1,0 +1,9 @@
+# Exclude huge raw tile/API caches, dependencies, build artifacts, and bulk coordinate tables
+terra_twin_data/cache/
+terra_twin_web/node_modules/
+terra_twin_web/dist/
+terra_twin_web/package-lock.json
+terra_twin_web/public/data/cells.json
+**/__pycache__/
+*.pyc
+.vite-temp/
