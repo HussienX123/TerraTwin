@@ -40,6 +40,25 @@ docker run -d --name terratwin -p 80:80 terratwin-web
 
 Open `http://localhost/` in your browser.
 
+---
+
+## 2.1 Dokploy / Coolify / PaaS Deployment
+
+If you are using **Dokploy** on your VPS:
+
+1. **Repository Settings**:
+   - **Repository URL**: `https://github.com/HussienX123/TerraTwin.git`
+   - **Branch**: `main`
+2. **Build Configuration**:
+   - **Option A (Recommended — Dockerfile)**:
+     - Under **General** -> **Build Type**, select **Dockerfile**.
+     - Dockerfile Path: `/Dockerfile` (or leave default).
+     - Container Port: `80`.
+   - **Option B (Nixpacks)**:
+     - If you keep **Build Type: Nixpacks**, set **Base Directory** to `terra_twin_web` (or leave root as `nixpacks.toml` is provided).
+     - Container Port: `80`.
+3. Click **Deploy**. Dokploy will build the image and serve the web application with SPA routing.
+
 ### Docker Features
 - Multi-stage build (`node:20-alpine` -> `nginx:alpine`) keeping final container image small (< 30 MB).
 - Gzip compression enabled for JS, CSS, JSON, SVG, HTML.

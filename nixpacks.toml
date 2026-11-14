@@ -1,0 +1,14 @@
+# Nixpacks configuration for Dokploy
+providers = ["node"]
+
+[variables]
+NODE_ENV = "production"
+
+[phases.install]
+cmds = ["cd terra_twin_web && npm ci"]
+
+[phases.build]
+cmds = ["cd terra_twin_web && npm run build"]
+
+[start]
+cmd = "cd terra_twin_web && npx --yes serve -s dist -l 80"
